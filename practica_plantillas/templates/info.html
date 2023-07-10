@@ -1,0 +1,15 @@
+{% extends "./layouts/base.html" %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block content %}
+    <h1>Phillip Günterson <> Fotografo</h1>
+    <div class="about">
+        {% load static %}
+        <img src="{% static 'img/portrait.png' %}" alt="Phillip Günterson" width=20% />
+        <div class="about-content">
+            <h3>Fotografía creativa para tu marca<h3>
+            <p>Fotos para hacer fotos fotos para hacer foto fotos para hacer foto fotos para hacer foto fotos para hacer foto fotos para hacer foto fotos para hacer foto fotos para hacer foto.</p>
+        </div>
+    </div>
+{% endblock %}
