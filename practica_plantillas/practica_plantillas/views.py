@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html',{})
+    return render(request, 'index.html', {})
 
-def portafolio(request):
-    return render(request, 'portafolio.html', {})
+def portfolio(request):
+    return render(request, 'portfolio.html', {})
