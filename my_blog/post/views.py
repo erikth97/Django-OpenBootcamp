@@ -1,5 +1,14 @@
+
 from django.shortcuts import render
 from .models import Author, Entry
+from django.http import HttpResponse
+
+def update(request):
+    author = Author.objects.get(id=1)
+    author.name = "3rik"
+    author.email = "eriktamayo@github.com"
+    author.save()
+    return HttpResponse("Modificado")
 
 def queries(request):
     # Obtener todos los elementos
